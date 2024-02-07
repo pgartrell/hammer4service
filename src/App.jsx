@@ -1,12 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css'
 import MainPage from './MainPage/mainPage'
-import Header from './Header/header';
+import NavBar from './Navbar/Navbar';
 
 function App() {
   return (
     <>
-    <Header />
+    <NavBar />
     <MainPage />
     </>
   )

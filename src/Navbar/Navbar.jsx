@@ -1,9 +1,9 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import './headerCss.css';
+import './navbarCss.css';
 
-function Header() {
+function NavBar() {
 
   return (
     <>
@@ -34,4 +34,4 @@ function Header() {
   )
 }
 
-export default Header
+export default NavBar
