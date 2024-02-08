@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css'
-import NavBar from './Navbar/Navbar';
-import MainPage from './MainPage/mainPage.jsx';
+import NavBar from './navbar.jsx';
+import MainPage from './mainpage.jsx';
 
 function App() {
   return (
