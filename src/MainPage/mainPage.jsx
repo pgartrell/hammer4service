@@ -1,11 +1,11 @@
-import '../MainPage/mainPageCss.css'
+import './mainPageCss.css'
 
 function MainPage() {
 
   return (
     <>
       <div className='mainDiv'>
-        Testing
+        <h1>Whats Up!</h1>
       </div>
     </>
   )
