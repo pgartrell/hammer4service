@@ -1,13 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css'
-import NavBar from './Navbar/Navbar.jsx';
-import MainPage from './MainPage/mainPage.jsx';
+import NavBar from './navbar/navbar.jsx';
+
 
 function App() {
   return (
     <>
     <NavBar />
-    <MainPage />
+ 
     </>
   )
 }
