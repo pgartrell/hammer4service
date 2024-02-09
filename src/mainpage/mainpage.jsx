@@ -5,7 +5,7 @@ function MainPage() {
   return (
     <>
       <div className='mainDiv'>
-        <h1>Whats Up!</h1>
+        <h1>Another One</h1>
       </div>
     </>
   )
