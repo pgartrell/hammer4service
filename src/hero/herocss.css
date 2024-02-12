@@ -1,0 +1,54 @@
+.hero{
+    position: relative;
+    background-image: url(../assets/blue-reno.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+    box-shadow: 2px 2px rgb(240, 229, 208);
+}
+
+/* @media screen and (max-width: 576px) {
+    .hero{
+        background-image: url(../assets/blue-reno.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+} */
+
+.hero--maindiv{  
+    text-align: center;
+    color: rgb(218, 116, 21);
+    z-index: 2;
+    border-radius: 1em;
+    padding: 2%
+}
+
+.hero--mainText{
+    font-size: 12vw;
+    font-weight: 700;
+    font-family: "Protest Riot", sans-serif;
+}
+
+.hero--pText {
+    font-weight: bolder;
+    font-size: 5vw;
+    font-family: "Fjalla One", sans-serif;
+}
+
+@media screen and (min-width: 576px) {
+    .hero{
+        background-image: url(../assets/blue-reno1.jpg);
+    }
+
+    .hero--mainText{
+        font-size: 6em;
+    }
+
+    .hero--pText {
+        font-size: 3em;
+    }
+}
