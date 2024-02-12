@@ -1,13 +1,19 @@
+import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './navbarcss.css';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
 function NavBar() {
 
+  const [show, setHide] = useState(false);
+
+  const handleClose = () => setHide(false);
+
   return (
     <>
-      <Navbar collapseOnSelect fixed="top" expand="md" className="navbar bg-body-tertiary" bg="dark" data-bs-theme="dark"> 
+      <Navbar collapseOnSelect expand="md" className="navbar bg-body-tertiary" bg="dark" data-bs-theme="dark"> 
         <Container>
         <Navbar.Brand href="#home">
             <img
@@ -18,7 +24,9 @@ function NavBar() {
               className="logo--image d-inline-block align-top"
             />
           </Navbar.Brand>
-          <Navbar.Brand href="#home" className='logo--title'>Hammer4Service</Navbar.Brand>
+          <Offcanvas show={show} onHide={handleClose} responsive="sm">
+            <Navbar.Brand href="#home" className='.d-none .d-sm-block logo--title'>Hammer4Service</Navbar.Brand>
+          </Offcanvas>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">        
             <Nav className="ms-auto">

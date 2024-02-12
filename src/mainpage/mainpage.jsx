@@ -1,12 +1,11 @@
+import Hero from '../hero/hero'
 import './mainpagecss.css'
 
 function MainPage() {
 
   return (
     <>
-      <div className='mainDiv'>
-        <h1>Another One</h1>
-      </div>
+      <Hero />
     </>
   )
 }
