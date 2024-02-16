@@ -1,16 +1,9 @@
-import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './navbarcss.css';
-import Offcanvas from 'react-bootstrap/Offcanvas';
 
 function NavBar() {
-
-  const [show, setHide] = useState(false);
-
-  const handleClose = () => setHide(false);
-
   return (
     <>
       <Navbar collapseOnSelect expand="md" className="navbar bg-body-tertiary" bg="dark" data-bs-theme="dark"> 
@@ -24,9 +17,11 @@ function NavBar() {
               className="logo--image d-inline-block align-top"
             />
           </Navbar.Brand>
-          <Offcanvas show={show} onHide={handleClose} responsive="sm">
-            <Navbar.Brand href="#home" className='.d-none .d-sm-block logo--title'>Hammer4Service</Navbar.Brand>
-          </Offcanvas>
+            <Navbar.Brand 
+              href="#home" 
+              className='logo--title'>
+                  Hammer4Service
+            </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">        
             <Nav className="ms-auto">
@@ -37,6 +32,15 @@ function NavBar() {
           </Navbar.Collapse>
         </Container>  
       </Navbar>
+
+      <Navbar className='navbar--2'>
+        <h1 className='navbar-quote'>Get a Quote</h1>
+        <div className='navbar-callandnumber'>
+          <h1 className='navbar--callus'>Call us directly!</h1>
+          <a className="phone-number" href="tel:9123561429">(912) 356-1429</a>
+        </div>
+      </Navbar>
+      
 
     </>
   )

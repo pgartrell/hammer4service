@@ -41,4 +41,36 @@
     box-shadow: 3px 5px rgb(71, 70, 70);
 }
 
+.navbar--2{
+    display: flex;
+    background-color: white;
+    margin: 1em;
+    padding: 1em;
+    justify-content: space-around;
+    border-radius: 1em;
+}
+
+.phone-number{
+    font-size: 25px;
+    text-decoration: none;
+    color: orangered;
+}
+
+.phone-number:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 576px) {
+    .logo--title{
+        display: none
+    }
+    .navbar--2{
+        flex-direction: column;
+    }
+    .navbar-quote, .navbar--callus, .phone-number{
+        font-size: 22px;
+    }
+}
+
   

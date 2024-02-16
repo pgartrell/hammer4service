@@ -11,14 +11,6 @@
     box-shadow: 2px 2px rgb(240, 229, 208);
 }
 
-/* @media screen and (max-width: 576px) {
-    .hero{
-        background-image: url(../assets/blue-reno.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-} */
-
 .hero--maindiv{  
     text-align: center;
     color: rgb(218, 116, 21);
@@ -39,7 +31,7 @@
     font-family: "Fjalla One", sans-serif;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 800px) {
     .hero{
         background-image: url(../assets/blue-reno1.jpg);
     }
