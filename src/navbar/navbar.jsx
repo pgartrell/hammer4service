@@ -31,16 +31,7 @@ function NavBar() {
             </Nav>
           </Navbar.Collapse>
         </Container>  
-      </Navbar>
-
-      <Navbar className='navbar--2'>
-        <h1 className='navbar-quote'>Get a Quote</h1>
-        <div className='navbar-callandnumber'>
-          <h1 className='navbar--callus'>Call us directly!</h1>
-          <a className="phone-number" href="tel:9123561429">(912) 356-1429</a>
-        </div>
-      </Navbar>
-      
+      </Navbar>  
 
     </>
   )
