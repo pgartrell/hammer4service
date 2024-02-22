@@ -20,7 +20,7 @@ function NavBar() {
             <Navbar.Brand 
               href="#home" 
               className='logo--title'>
-                  Hammer4Service
+                  Hammer4Service, LLC
             </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">        

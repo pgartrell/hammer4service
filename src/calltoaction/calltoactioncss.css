@@ -1,0 +1,26 @@
+
+
+.calltoaction--row{
+    display: flex;
+    margin: 4em;
+    color: white;
+    background-color: rgb(167, 162, 162);
+}
+
+.calltoaction--col {
+    flex: 50%;
+    max-width: 80%;
+    margin: 10px;  
+}
+
+.calltoaction--H2{
+    font-size: large;
+}
+
+.calltoaction--H1{
+   text-align: center;
+}
+
+img {
+    border-radius: 10px;
+}
