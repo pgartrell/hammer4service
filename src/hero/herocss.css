@@ -56,12 +56,13 @@ legend {
     color: peachpuff;
     font-weight: 300;
     font-family: "Bebas Neue", sans-serif;
-    background:black;
+    background:rgba(96, 88, 88, 0.5);
     padding:10px 20px;
     text-decoration:none;
     letter-spacing:2px;
     font-size: 2em;
     border-radius: 5px;
+    border: solid white 1px;
     text-align: center;
 }
 
