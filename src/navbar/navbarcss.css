@@ -39,6 +39,12 @@
 
 .navbar{
     box-shadow: 3px 5px rgb(71, 70, 70);
+    background-color: rgb(167, 162, 162);
+}
+
+.nav {
+    display: flex;
+ 
 }
 
 
