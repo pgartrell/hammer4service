@@ -11,15 +11,12 @@ function NavBar() {
             <img
               alt=""
               src="../src/assets/logo2.png"
-              width="100"
-              height="50"
               className="logo--image d-inline-block align-top"
             />
           </Navbar.Brand>
             <Navbar.Brand 
               href="#home" 
               className='logo--title'>
-                  Hammer4Service
                   Hammer4Service, LLC
             </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

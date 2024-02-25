@@ -1,0 +1,92 @@
+
+
+.calltoaction__row{
+    display: flex;
+    margin: 4em;
+    color: white;
+    background-color: rgb(167, 162, 162);
+    align-items: center;
+}
+
+.calltoaction__col {
+    flex: 50%;
+    max-width: 80%;
+    margin: 10px;  
+    
+}
+
+.calltoaction__H2{
+    font-size: 1.5em
+}
+
+.isOpencalltoaction__H2{
+    font-size: 1em;
+    text-align: center;
+}
+
+.calltoaction__H1{
+   text-align: center;
+}
+
+img {
+    border-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .calltoaction__H2 {
+        width: 300px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 10;
+        overflow: hidden;
+        font-size: 1em; 
+        width: 95%;
+        text-align: center;
+    }
+
+    .calltoaction__buttondiv{
+        display: flex;
+        justify-content: center;
+    }
+
+    .readMoreButton {
+        font-size: x-large;
+        color: peachpuff;
+        font-weight: 300;
+        font-family: "Bebas Neue", sans-serif;
+        background:rgba(96, 88, 88, 0.5);
+        padding:10px 20px;
+        text-decoration:none;
+        letter-spacing:2px;
+        font-size: 1em;
+        border-radius: 5px;
+        border: solid white 1px;
+    }
+
+    .readmoreButton:hover {
+        border:none;
+        background:black;
+        padding:10px 10px;
+    }
+
+    .calltoaction__col{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .readMoreButton {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .calltoaction__row {
+        flex-direction: column;
+        align-items: center;
+    }
+}

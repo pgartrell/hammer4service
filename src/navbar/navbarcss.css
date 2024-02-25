@@ -2,6 +2,8 @@
     border-style: double;
     border-color: black;
     border-radius: 5px;
+    width: 100px;
+    height: 50px;
 }
 .logo--image:hover{
     box-shadow: 2px 2px rgb(212, 204, 204);
@@ -44,12 +46,16 @@
 }
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 789px) {
     .logo--title{
         display: none
     }
     .navbar-quote{
         font-size: 22px;
+    }
+    .logo--image{
+        width: 150px;
+        height: 100px;
     }
 }
 

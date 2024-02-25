@@ -7,7 +7,7 @@ function Hero() {
             <div className="hero--all">
                 <header className="hero m-3">
                     <div className="hero--maindiv">
-                        <h1 className="hero--mainText">Hammer4Service LLC</h1>
+                        <h1 className="hero--mainText">Hammer4Service <span className="llc">LLC</span></h1>
                         <h2>Home renovation experts. Bathroom, Kitchen, Electrical, Sheetrock/Painting, Flooring, and more. </h2>
                         <h3>Not sure we can help you? Please reach out.</h3>
                     </div>
