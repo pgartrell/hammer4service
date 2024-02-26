@@ -2,6 +2,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './navbarcss.css';
+import { Link } from 'react-router-dom';
+import logo from "../assets/logo2.png"
+
 function NavBar() {
   return (
     <>
@@ -10,7 +13,7 @@ function NavBar() {
         <Navbar.Brand href="#home">
             <img
               alt=""
-              src="../src/assets/logo2.png"
+              src={logo}
               className="logo--image d-inline-block align-top"
             />
           </Navbar.Brand>
@@ -22,9 +25,13 @@ function NavBar() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">        
             <Nav className="ms-auto">
-              <Nav.Link className="navbar--links" href="#home">Home</Nav.Link>
-              <Nav.Link className="navbar--links"href="#features">Gallery</Nav.Link>
-              <Nav.Link className="navbar--links"href="#pricing">Get a Quote</Nav.Link>
+              <Link to="/" className="navbar--links">Home</Link>
+              <Link to="/gallery" className="navbar--links">Gallery</Link>
+              <Link to="/" className="navbar--links">Get a Quote</Link>
+
+              {/* <Link className="navbar--links" href="#home">Home</Link>
+              <Link className="navbar--links"href="#features">Gallery</Link>
+              <Link className="navbar--links"href="#pricing">Get a Quote</Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>  

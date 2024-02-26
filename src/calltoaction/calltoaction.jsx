@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './calltoactioncss.module.css';
+import calltoactionimg from '../assets/im3rd-media.jpg';
 
 export default function CallToAction() {
     const [isOpen, setIsOpen] = useState(false)
@@ -9,7 +10,7 @@ export default function CallToAction() {
                 <div className={styles.calltoaction__col}>          
                 <img
                     alt=""
-                    src="../src/assets/im3rd-media-FJZtZldA-uE-unsplash.jpg"
+                    src={calltoactionimg}
                     width="100%"
                     height="100%"
                 />   

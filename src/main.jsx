@@ -2,12 +2,19 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import Gallery from './gallery/gallery.jsx'
 
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route exact path="/" element={<App />}/>
+      <Route exact path="/gallery" element={<Gallery />}/>
+      {/* <Route exact path="/quote" component={Quote}/> */}
+    </Routes>
+  </BrowserRouter>
+
 )
