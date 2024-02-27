@@ -1,16 +1,8 @@
 /* Global Styles */
 
 body {
-  background-image: url("./assets/blue-reno.jpeg");
-  background-color: #cccc;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
+  background-color: rgba(238, 231, 231, 0.8);
   }
-  
-.mainDiv{
-  height: 100vh;
-}
 
 #root {
   font-family: sans-serif;

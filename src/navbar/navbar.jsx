@@ -27,7 +27,7 @@ function NavBar() {
             <Nav className="ms-auto">
               <Link to="/" className="navbar--links">Home</Link>
               <Link to="/gallery" className="navbar--links">Gallery</Link>
-              <Link to="/" className="navbar--links">Get a Quote</Link>
+              <Link to="/quote" className="navbar--links">Get a Quote</Link>
 
               {/* <Link className="navbar--links" href="#home">Home</Link>
               <Link className="navbar--links"href="#features">Gallery</Link>

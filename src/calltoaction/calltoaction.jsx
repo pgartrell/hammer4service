@@ -9,6 +9,7 @@ export default function CallToAction() {
             <div className={styles.calltoaction__row}>
                 <div className={styles.calltoaction__col}>          
                 <img
+                    className='calltoaction--img'
                     alt=""
                     src={calltoactionimg}
                     width="100%"

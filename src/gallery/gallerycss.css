@@ -1,0 +1,16 @@
+.gallery__img{
+    padding: 5px
+
+}
+
+.gallery_maindiv {
+    background-color: white;
+}
+
+.gallery_navbar {
+    padding-bottom: 10px;
+}
+
+.gallery__masonry{
+    padding-top: 10px;
+}

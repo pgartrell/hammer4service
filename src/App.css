@@ -1,2 +1,7 @@
-
+.app__maindiv{
+    background-image: url("./assets/blue-reno.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
 

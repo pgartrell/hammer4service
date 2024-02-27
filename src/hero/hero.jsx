@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./herocss.css"
 
 function Hero() {
@@ -15,8 +16,8 @@ function Hero() {
 
 
                 <div className='navbar--2'>
-                    <a className="navbar--getAquotebutton" href="#" role="button">Get a Quote</a>
-                    <a className="phone-number" href="tel:9123561429">Call us directly!</a>
+                    <Link to="/quote" className="navbar--getAquotebutton" role="button">Get a Quote</Link>
+                    <a className="phone-number" href="tel:9293561429">Call us directly!</a>
         
                 </div>
             </div>

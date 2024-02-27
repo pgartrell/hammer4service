@@ -6,10 +6,10 @@ import MainPage from './mainpage/mainpage.jsx';
 
 function App() {
   return (
-    <>
-    <NavBar />
-    <MainPage />
-    </>
+    <div className='app__maindiv'>
+      <NavBar />
+      <MainPage />
+    </div>
   )
 }
 
