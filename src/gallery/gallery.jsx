@@ -12,6 +12,7 @@ import Img8 from "../assets/blue-reno1.jpg"
 import Img9 from "../assets/flooring.jpg"
 import Img10 from "../assets/electrical-panel.jpg"
 import Img11 from "../assets/half-floor.jpg"
+import Footer from "../footer/footer"
 
 
 const Gallery = () => {
@@ -71,6 +72,7 @@ const Gallery = () => {
             ))}
         </Masonry>
       </ResponsiveMasonry>
+      <Footer />
     </div>
       )
 }

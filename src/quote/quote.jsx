@@ -1,3 +1,4 @@
+import Footer from '../footer/footer'
 import NavBar from '../navbar/navbar'
 
 const Quote = () => {
@@ -5,6 +6,7 @@ const Quote = () => {
     <div>
         <NavBar />
         <h1>Quote page here </h1>
+        <Footer />
 
 
     </div>

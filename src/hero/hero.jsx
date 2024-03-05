@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
 import { useState } from "react";
+import UilPhone from '@iconscout/react-unicons/icons/uil-phone'
+import UilEmail from '@iconscout/react-unicons/icons/uil-envelope-edit'
 import "./herocss.css"
 import Dropdown from 'react-bootstrap/Dropdown';
 
@@ -33,9 +35,11 @@ function Hero() {
                       </Dropdown.Toggle>
                       <Dropdown.Menu show={isDropdownVisible}>
                         <Dropdown.Item className="phone-number" href="tel:9293561429">
+                        <UilPhone className="navbar--phoneicon" size="30" color="black" />
                           Call us: (929) 356-1429
                         </Dropdown.Item>
                         <Dropdown.Item className="email" href="mailto: hammer4service@gmail.com">
+                        <UilEmail className="navbar--phoneicon" size="30" color="black" />
                           Send Email: hammer4service@gmail.com
                         </Dropdown.Item>
                       </Dropdown.Menu>
