@@ -20,35 +20,27 @@ function Hero() {
                 </header>
 
 
-                <div className='navbar--2'>
-                  <div>
-                    <Link to="/quote" className="navbar--getAquotebutton" role="button">Get a Quote</Link>
-                    
-                  </div>
-                    <div>
-                      
-                      <Dropdown 
-                            onMouseLeave={() => setDropdownVisible(false)}
-                            onMouseOver={() => setDropdownVisible(true)}
-                            style={{ width: '166px' }}
+                <div className='navbar--2'>               
+                    <Link to="/quote" className="navbar--getAquotebutton" role="button">Get a Quote</Link>          
+                    <Dropdown 
+                          onMouseLeave={() => setDropdownVisible(false)}
+                          onMouseOver={() => setDropdownVisible(true)}
+                    >
+                      <Dropdown.Toggle
+                      className="contact-us-button"
                       >
-                        <Dropdown.Toggle
-                        className="contact-us-button"
-                        >
-                            Contact us directly!
-                        </Dropdown.Toggle>
-                        <Dropdown.Menu show={isDropdownVisible}>
-                          <Dropdown.Item className="phone-number" href="tel:9293561429">
-                            Call us: (929) 356-1429
-                          </Dropdown.Item>
-                          <Dropdown.Item className="email" href="mailto: hammer4service@gmail.com">
-                            Send Email: hammer4service@gmail.com
-                          </Dropdown.Item>
-                        </Dropdown.Menu>
+                          Contact us directly!
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu show={isDropdownVisible}>
+                        <Dropdown.Item className="phone-number" href="tel:9293561429">
+                          Call us: (929) 356-1429
+                        </Dropdown.Item>
+                        <Dropdown.Item className="email" href="mailto: hammer4service@gmail.com">
+                          Send Email: hammer4service@gmail.com
+                        </Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
                   
-
-                      </Dropdown>
-                    </div>
                 </div>
           </div>
         </fieldset>
