@@ -10,7 +10,7 @@ function NavBar() {
     <>
       <Navbar collapseOnSelect expand="md" className="navbar"> 
         <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
             <img
               alt=""
               src={logo}
@@ -18,7 +18,7 @@ function NavBar() {
             />
           </Navbar.Brand>
             <Navbar.Brand 
-              href="#home" 
+              href="/" 
               className='logo--title'>
                   Hammer4Service, LLC
             </Navbar.Brand>

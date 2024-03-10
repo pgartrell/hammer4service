@@ -57,6 +57,20 @@ footer .top {
     display: flex;
     
   }
+
+  .contact-us-button2{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+  }
+
+  .contact-us-button2:hover{
+    background-color: black;
+    padding: 3px;
+  }
+
+
+
   @media screen and (max-width: 600px) {
     footer .top .pages {
       flex-wrap: wrap;
