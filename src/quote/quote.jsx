@@ -3,7 +3,7 @@ import NavBar from '../navbar/navbar'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
-import './quotecss.css'
+import styles from './quotecss.module.css';
 
 const Quote = () => {
 
@@ -26,7 +26,7 @@ const Quote = () => {
         event.stopPropagation();
     }
     setvalidated(true);
-    alert("Form Submitted Successfully!!")
+    // alert("Form Submitted Successfully!!")
     handleClear()
     }
 
@@ -47,11 +47,13 @@ const Quote = () => {
       })
     )
 
+
   return (
-    <div>
+    <div id={styles.form__mainDiv}>
         <NavBar />
-        <h1 className='form--h1'>We want to hear from you!</h1>
-        <Form className='form'
+        <h1 className={styles.form__h1}>We want to hear from you!</h1>
+        <Form
+              id={styles.form}
               noValidate validated={validated} 
               onSubmit={submitFn}>
           <Form.Group className="mb-3" controlId="fullName">
@@ -126,9 +128,10 @@ const Quote = () => {
             Upload some pictures of how the project looks now
             </Form.Text>
           </Form.Group>
-          <Button variant="primary" type="submit">
+          {/* onClick={CollapseForm()} */}
+          <button className={styles.form__button} type="submit">
             Submit
-          </Button>
+          </button>
       </Form>
         <Footer />
 

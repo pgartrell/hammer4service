@@ -1,0 +1,31 @@
+form{
+    padding: 5%;
+}
+
+.form__h1 {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.form__button{
+
+        font-size: large;
+        color: peachpuff;
+        font-weight: 300;
+        font-family: "Bebas Neue", sans-serif;
+        background:rgba(96, 88, 88, 0.5);
+        padding:10px 20px;
+        text-decoration:none;
+        letter-spacing:2px;
+        border-radius: 5px;
+        border: solid white 1px;
+        text-align: center;
+    
+}
+
+.form__button:hover{
+    border:none;
+    background:black;
+    padding:20px 20px;
+    color: peachpuff;
+}
