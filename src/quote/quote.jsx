@@ -30,7 +30,7 @@ const Quote = () => {
     }
     setvalidated(true);
     alert("Form Submitted Successfully!!")
-    sendEmail(e)
+    sendEmail(event)
     handleClear()
     }
 
@@ -51,11 +51,11 @@ const Quote = () => {
       })
     )
 
-    const sendEmail = (e) => {
-      e.preventDefault();
+    const sendEmail = (event) => {
+      event.preventDefault();
   
       emailjs
-        .sendForm('gmail', 'template_pnfjcbs', form.current, {
+        .sendForm('service_q5ef8ia', 'template_pnfjcbs', form.current, {
           publicKey: 'kBTGzhWmrVQTpJVtT',
         })
         .then(
@@ -76,7 +76,9 @@ const Quote = () => {
         <Form
               id={styles.form}
               noValidate validated={validated} 
-              onSubmit={submitFn}>
+              onSubmit={submitFn}
+              ref={form}
+              >
           <Form.Group className="mb-3" controlId="fullName">
             <Form.Label>Full Name</Form.Label>
             <Form.Control 
