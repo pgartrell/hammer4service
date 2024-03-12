@@ -1,13 +1,16 @@
 import Footer from '../footer/footer'
 import NavBar from '../navbar/navbar'
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
 import styles from './quotecss.module.css';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Quote = () => {
 
   const [validated, setvalidated] = useState(false)
+
+  const form = useRef();
 
   const [form_data, setform_data] = useState({
     name: "",
@@ -26,7 +29,8 @@ const Quote = () => {
         event.stopPropagation();
     }
     setvalidated(true);
-    // alert("Form Submitted Successfully!!")
+    alert("Form Submitted Successfully!!")
+    sendEmail(e)
     handleClear()
     }
 
@@ -46,6 +50,23 @@ const Quote = () => {
         pictures: "",
       })
     )
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm('gmail', 'template_pnfjcbs', form.current, {
+          publicKey: 'kBTGzhWmrVQTpJVtT',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    };
 
 
   return (
