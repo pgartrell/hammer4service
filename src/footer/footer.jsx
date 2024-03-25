@@ -14,7 +14,7 @@ const Footer  = () => {
     <footer>
     <div className="top">
         <div className="pages">
-            <Link to="/home" className="footer--links" role="button">Why hire us?</Link>    
+            {/* <Link to="/home" className="footer--links" role="button">Why hire us?</Link>     */}
             
             <Dropdown
               onMouseLeave={() => setDropdownVisible(false)}
