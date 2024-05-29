@@ -4,7 +4,6 @@ import NavBar from './navbar/navbar.jsx';
 import MainPage from './mainpage/mainpage.jsx';
 import Footer from './footer/footer';
 
-
 function App() {
   return (
     <div className='app__maindiv'>
