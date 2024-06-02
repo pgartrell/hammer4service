@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import UilPhone from '@iconscout/react-unicons/icons/uil-phone'
 import UilEmail from '@iconscout/react-unicons/icons/uil-envelope-edit'
 import "./herocss.css"
@@ -8,6 +8,22 @@ import Dropdown from 'react-bootstrap/Dropdown';
 function Hero() {
 
     const [isDropdownVisible, setDropdownVisible] = useState(false);
+
+    const [isModalVisible, setModalVisible] = useState(false)
+    
+    const [catFacts, setCatFacts] = useState([])
+
+    useEffect(() => {
+            let query = `Teach me about cats`
+            fetch(`https://catfact.ninja/fact?=${query}`)
+            .then((response) => response.json())
+            .then(data => setCatFacts({catFacts: data.data}))
+            .catch(err => console.log(err))
+    }, [])
+
+    window.CommandBar.addArgumentChoices("catFacts", [], {
+        onInputChange: catFacts,
+        });
 
     return (
         <fieldset className="hero--fieldset">
@@ -23,7 +39,16 @@ function Hero() {
 
 
                 <div className='navbar--2'>               
-                    <Link to="/quote" className="navbar--getAquotebutton" role="button">Get a Quote</Link>          
+                    <Link 
+                      to="/quote" 
+                      className="navbar--getAquotebutton" 
+                      role="button"
+                      onMouseOver={() => setModalVisible(false)}
+                      onMouseLeave={() => setModalVisible(true)}
+                      >
+                        Get a Quote
+                    </Link>
+                    {isModalVisible ? null : window.CommandBar.trackEvent("getAQuoteModal", {})}       
                     <Dropdown 
                           onMouseLeave={() => setDropdownVisible(false)}
                           onMouseOver={() => setDropdownVisible(true)}
@@ -32,6 +57,7 @@ function Hero() {
                       className="contact-us-button"
                       >
                           Contact us directly!
+                          
                       </Dropdown.Toggle>
                       <Dropdown.Menu show={isDropdownVisible}>
                         <Dropdown.Item className="phone-number" href="tel:9293561429">
@@ -46,6 +72,12 @@ function Hero() {
                     </Dropdown>
                   
                 </div>
+          </div>
+
+          <div>
+            <h1>Testing API Call</h1>
+              <h2>{Object.entries(catFacts).map((facts) => {facts.fact, facts.length} )}</h2>
+              <p>{console.log(catFacts.fact)}</p>
           </div>
         </fieldset>
     )
