@@ -73,12 +73,12 @@ function Hero() {
                   
                 </div>
           </div>
-
+{/* 
           <div>
             <h1>Testing API Call</h1>
               <h2>{Object.entries(catFacts).map((facts) => {facts.fact, facts.length} )}</h2>
               <p>{console.log(catFacts.fact)}</p>
-          </div>
+          </div> */}
         </fieldset>
     )
 }
